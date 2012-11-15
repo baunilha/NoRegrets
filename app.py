@@ -44,7 +44,7 @@ def twilio():
 		from_telephone = os.environ.get('+15126051611') # format +19171234567
 
 		message = client.sms.messages.create(to=to_number, from_=from_telephone,
-	                                     body="DWD DEMO: " + sms_text)
+	                                     body="No Regrets: " + sms_text)
 
 		return "message '%s' sent" % sms_text
 
