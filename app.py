@@ -29,7 +29,7 @@ def twilio():
 		if len(telephone_num) != 11:
 			return "your target phone number must be 11 digits. go back and try again."
 		else:
-			to_number = "+1" + str(telephone_num) #US country only now
+			to_number = "+" + str(telephone_num) #US country only now
 
 
 		# trim message to 120
