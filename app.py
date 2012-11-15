@@ -36,12 +36,12 @@ def twilio():
 		if len(sms_text) > 120:
 			sms_text = sms_text[0:119]
 
-		account = os.environ.get('AC4d25545952f6700e0dfa27c63c5a9175')
-		token = os.environ.get('39c5fb8160a838700ff6846f6ad4bc96')
+		account = os.environ.get('TWILIO_ACCOUNT_SID=AC4d25545952f6700e0dfa27c63c5a9175')
+		token = os.environ.get('TWILIO_AUTH_TOKEN=39c5fb8160a838700ff6846f6ad4bc96')
 
 		client = TwilioRestClient(account, token)
 
-		from_telephone = os.environ.get('+15126051611') # format +19171234567
+		from_telephone = os.environ.get('TWILIO_PHONE_NUMBER=+15126051611') # format +19171234567
 
 		message = client.sms.messages.create(to=to_number, from_=from_telephone,
 	                                     body="No Regrets: " + sms_text)
