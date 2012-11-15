@@ -3,7 +3,7 @@
 /***********       ************/ 
 
 html {
-    display: block;
+    
 }
 
 body {
@@ -70,32 +70,14 @@ input {
     
 #container {
     background-image:url('../img/bk.jpg');
-    margin: 0 auto;
     width: 320px;
     height: 480px;
-    border-width: 0 1px 1px 1px;
-    border-color: #DDD;
-    border-style: solid;
+    position: relative;
+    display: block;
+    margin: 0 auto;
     }     
 
-#bar {
-    padding: 0 0.75em;
-    text-align: center;
-    font-size: 0.7em;
-    background-color: #FAFAFA;
-    background-image: -moz-linear-gradient(top,white,#F2F2F2);
-    background-image: -webkit-gradient(linear,0 0,0 100%,from(white),to(#F2F2F2));
-    background-image: -webkit-linear-gradient(top,white,#F2F2F2);
-    background-image: -o-linear-gradient(top,white,#F2F2F2);
-    background-image: linear-gradient(to bottom,white,#F2F2F2);
-    background-repeat: repeat-x;
-    border: 1px solid #D4D4D4;
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-}
-  
+ 
 
 #content {
     padding: 5px;
@@ -125,10 +107,20 @@ span.label a {
 }
 
 .icons {
-    margin-top: -15px;
+    position:absolute;
 }
 
-.icons2 {
-    margin-top: 15px;
+.icon1 {
+    top: 330px;
+    left: 50px;
 }
 
+.icon2 {
+    top: 330px;
+    left: 129px;
+}
+
+.icon3 {
+    top: 330px;
+    left: 208px;
+}
