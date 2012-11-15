@@ -36,12 +36,12 @@ def twilio():
 		if len(sms_text) > 120:
 			sms_text = sms_text[0:119]
 
-		account = os.environ.get('TWILIO_ACCOUNT_SID')
-		token = os.environ.get('TWILIO_AUTH_TOKEN')
+		account = os.environ.get('ACc38cfdaa8b83678311b413c3e0f9ba0d')
+		token = os.environ.get('1409b075ab6f995643b8e4d54a7b22ba')
 
 		client = TwilioRestClient(account, token)
 
-		from_telephone = os.environ.get('TWILIO_PHONE_NUMBER') # format +19171234567
+		from_telephone = os.environ.get('+15126051611') # format +19171234567
 
 		message = client.sms.messages.create(to=to_number, from_=from_telephone,
 	                                     body="DWD DEMO: " + sms_text)
