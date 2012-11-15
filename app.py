@@ -36,8 +36,8 @@ def twilio():
 		if len(sms_text) > 120:
 			sms_text = sms_text[0:119]
 
-		account = os.environ.get('ACc38cfdaa8b83678311b413c3e0f9ba0d')
-		token = os.environ.get('1409b075ab6f995643b8e4d54a7b22ba')
+		account = os.environ.get('AC4d25545952f6700e0dfa27c63c5a9175')
+		token = os.environ.get('39c5fb8160a838700ff6846f6ad4bc96')
 
 		client = TwilioRestClient(account, token)
 
