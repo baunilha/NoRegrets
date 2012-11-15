@@ -100,6 +100,7 @@ input {
 
 #form{
     text-align: center;
+    margin-top: -8px;
 }
 
 span.label a {
